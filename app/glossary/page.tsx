@@ -1,11 +1,15 @@
 import { AppShell } from "@/components/AppShell";
 import { GlossaryClient } from "@/components/GlossaryClient";
 import { Topbar } from "@/components/Topbar";
-import { glossary } from "@/content";
+import { getGlossary } from "@/sanity/lib/content";
+import { createRouteMetadata } from "../seo";
+
+export const metadata = createRouteMetadata("/glossary");
 
 export default async function GlossaryPage({ searchParams }: PageProps<"/glossary">) {
   const params = await searchParams;
   const term = typeof params.term === "string" ? params.term : undefined;
+  const glossary = await getGlossary();
 
   return (
     <AppShell>

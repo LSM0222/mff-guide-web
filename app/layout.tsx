@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
+import { defaultSeoMetadata } from "./seo";
 import "./globals.css";
 import "./v14-prototype.css";
 import "./next-overrides.css";
 
-export const metadata: Metadata = {
-  title: "겁쟁이들의쉼터",
-  description: "퓨처파이트 공략을 한 곳에서 빠르게 찾아보세요.",
-};
+export const metadata: Metadata = defaultSeoMetadata;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

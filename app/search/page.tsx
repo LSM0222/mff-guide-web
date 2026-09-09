@@ -1,13 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { AppShell } from "@/components/AppShell";
 import { SearchForm } from "@/components/SearchForm";
 import { Topbar } from "@/components/Topbar";
-import { searchData } from "@/content/utils";
+import { searchSanityData } from "@/sanity/lib/content";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../seo";
+
+export const metadata: Metadata = {
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default async function SearchPage({ searchParams }: PageProps<"/search">) {
   const params = await searchParams;
   const q = typeof params.q === "string" ? params.q : "";
-  const results = searchData(q);
+  const results = await searchSanityData(q);
 
   return (
     <AppShell>
@@ -26,7 +37,7 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
               <Link className="search-result" href={result.route} key={`${result.type}-${result.title}`}>
                 <div className="type">
                   {result.type}
-                  {result.coming ? " · 준비중" : ""}
+                  {"coming" in result && result.coming ? " · 준비중" : ""}
                   {result.match === "body" ? " · 본문" : result.match === "title" ? " · 제목" : ""}
                 </div>
                 <h3>{result.title}</h3>

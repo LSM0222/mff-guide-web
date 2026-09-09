@@ -1,11 +1,14 @@
 import Link from "next/link";
-import { guideMap, homeSections, links, popular, updates } from "@/content";
 import { AppShell } from "@/components/AppShell";
 import { HomeGuideCard } from "@/components/GuideCards";
 import { SearchForm } from "@/components/SearchForm";
+import { getSiteSettings, homeSections } from "@/sanity/lib/content";
+import { createRouteMetadata } from "./seo";
 
-export default function Home() {
-  const popularGuides = popular.map((slug) => guideMap.get(slug)).filter(Boolean);
+export const metadata = createRouteMetadata("/");
+
+export default async function Home() {
+  const settings = await getSiteSettings();
 
   return (
     <AppShell>
@@ -19,7 +22,7 @@ export default function Home() {
               <SearchForm />
               <div className="hero-useful-links">
                 <span className="hero-useful-label">유용한 링크</span>
-                {links.map((link) => (
+                {settings.usefulLinks.map((link) => (
                   <a key={link.label} className="link-row" href={link.url} target="_blank" rel="noopener noreferrer">
                     <span>{link.label}</span>
                     <span>↗</span>
@@ -72,7 +75,7 @@ export default function Home() {
               <div className="rail-title">
                 공략 업데이트 <small>GUIDE</small>
               </div>
-              {updates.map((update) => (
+              {settings.updates.map((update) => (
                 <Link className="update-row" href={update.route} key={`${update.date}-${update.title}`}>
                   <span className="update-date">{update.date}</span>
                   <span className="tag">{update.tag}</span>
@@ -82,10 +85,10 @@ export default function Home() {
             </section>
             <section className="rail-card">
               <div className="rail-title">인기 공략 TOP 5</div>
-              {popularGuides.map((guide, index) => (
-                <Link className="popular-row" href={`/guides/${guide!.slug}`} key={guide!.slug}>
+              {settings.popularGuides.map((guide, index) => (
+                <Link className="popular-row" href={`/guides/${guide.slug}`} key={guide.slug}>
                   <span className="popular-num">{index + 1}</span>
-                  <span>{guide!.title}</span>
+                  <span>{guide.title}</span>
                 </Link>
               ))}
             </section>

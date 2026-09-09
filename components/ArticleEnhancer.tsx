@@ -1,6 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+type FootnoteState = {
+  number: string;
+  content: string;
+  top: number;
+  left: number;
+  placement: "above" | "below";
+};
 
 function markPortrait(img: HTMLImageElement) {
   const figure = img.closest("figure");
@@ -16,7 +24,7 @@ function highlightFirstText(root: HTMLElement, query: string) {
     acceptNode(node) {
       if (!node.nodeValue?.trim()) return NodeFilter.FILTER_REJECT;
       const parent = node.parentElement;
-      if (!parent || parent.closest("script,style,mark.search-hit")) return NodeFilter.FILTER_REJECT;
+      if (!parent || parent.closest("script,style,button.footnote-marker,.footnote-popover,mark.search-hit")) return NodeFilter.FILTER_REJECT;
       return node.nodeValue.toLowerCase().includes(needle) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
     },
   });
@@ -64,6 +72,8 @@ function scrollToSection(section: string) {
 
 export function ArticleEnhancer({ query, section }: { query: string; section: string }) {
   const [lightbox, setLightbox] = useState<{ src: string; alt: string; caption: string } | null>(null);
+  const [footnote, setFootnote] = useState<FootnoteState | null>(null);
+  const popoverRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const root = document.getElementById("articleRoot");
@@ -77,6 +87,20 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
 
     const onClick = (event: MouseEvent) => {
       const target = event.target;
+      if (target instanceof HTMLElement) {
+        const marker = target.closest<HTMLButtonElement>("button.footnote-marker");
+        if (marker) {
+          event.preventDefault();
+          event.stopPropagation();
+          setFootnote((current) => {
+            const number = marker.dataset.footnoteNumber ?? "";
+            if (current?.number === number) return null;
+            return footnoteFromMarker(marker);
+          });
+          return;
+        }
+      }
+
       if (!(target instanceof HTMLImageElement) || !target.matches("figure.media-asset.image img")) return;
       event.preventDefault();
       event.stopPropagation();
@@ -92,6 +116,49 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
     root.addEventListener("click", onClick);
     return () => root.removeEventListener("click", onClick);
   }, []);
+
+  useEffect(() => {
+    const root = document.getElementById("articleRoot");
+    if (!root) return;
+    const markers = Array.from(root.querySelectorAll<HTMLButtonElement>("button.footnote-marker"));
+    markers.forEach((marker) => {
+      const isOpen = Boolean(footnote && marker.dataset.footnoteNumber === footnote.number);
+      marker.setAttribute("aria-expanded", String(isOpen));
+      marker.classList.toggle("is-open", isOpen);
+    });
+  }, [footnote]);
+
+  useEffect(() => {
+    if (!footnote) return;
+
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      if (popoverRef.current?.contains(target)) return;
+      if (target instanceof HTMLElement && target.closest("button.footnote-marker")) return;
+      setFootnote(null);
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setFootnote(null);
+    };
+
+    const onReposition = () => {
+      const marker = document.querySelector<HTMLButtonElement>(`button.footnote-marker[data-footnote-number="${CSS.escape(footnote.number)}"]`);
+      if (marker) setFootnote(footnoteFromMarker(marker));
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", onReposition);
+    window.addEventListener("scroll", onReposition, true);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", onReposition);
+      window.removeEventListener("scroll", onReposition, true);
+    };
+  }, [footnote]);
 
   useEffect(() => {
     if (section) window.setTimeout(() => scrollToSection(section), 60);
@@ -115,18 +182,61 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
     };
   }, [isLightboxOpen]);
 
-  if (!lightbox || !lightboxSrc) return null;
+  if (!isLightboxOpen && !footnote) return null;
 
   return (
-    <div className="image-lightbox show" aria-hidden={false} onClick={() => setLightbox(null)}>
-      <button className="image-lightbox-close" type="button" aria-label="닫기" onClick={() => setLightbox(null)}>
-        ×
-      </button>
-      <figure onClick={(event) => event.stopPropagation()}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={lightboxSrc} alt={lightbox.alt} />
-        {lightbox.caption ? <figcaption>{lightbox.caption}</figcaption> : null}
-      </figure>
-    </div>
+    <>
+      {footnote ? (
+        <div
+          ref={popoverRef}
+          id={`footnote-popover-${footnote.number}`}
+          className={`footnote-popover ${footnote.placement}`}
+          role="dialog"
+          aria-label={`각주 ${footnote.number}`}
+          style={{ top: footnote.top, left: footnote.left }}
+        >
+          <div className="footnote-popover-head">
+            <span>{footnote.number}</span>
+            <button type="button" aria-label="각주 닫기" onClick={() => setFootnote(null)}>
+              ×
+            </button>
+          </div>
+          <p>{footnote.content}</p>
+        </div>
+      ) : null}
+      {lightbox && lightboxSrc ? (
+        <div className="image-lightbox show" aria-hidden={false} onClick={() => setLightbox(null)}>
+          <button className="image-lightbox-close" type="button" aria-label="닫기" onClick={() => setLightbox(null)}>
+            ×
+          </button>
+          <figure onClick={(event) => event.stopPropagation()}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={lightboxSrc} alt={lightbox.alt} />
+            {lightbox.caption ? <figcaption>{lightbox.caption}</figcaption> : null}
+          </figure>
+        </div>
+      ) : null}
+    </>
   );
+}
+
+function footnoteFromMarker(marker: HTMLButtonElement): FootnoteState {
+  const rect = marker.getBoundingClientRect();
+  const isMobile = window.innerWidth <= 560;
+  const width = Math.min(isMobile ? window.innerWidth - 24 : 280, 280);
+  const estimatedHeight = 150;
+  const belowTop = rect.bottom + 8;
+  const fitsBelow = belowTop + estimatedHeight <= window.innerHeight - 12;
+  const placement = fitsBelow || rect.top < estimatedHeight ? "below" : "above";
+  const top = placement === "below" ? belowTop : Math.max(12, rect.top - estimatedHeight - 8);
+  const centeredLeft = isMobile ? (window.innerWidth - width) / 2 : rect.left + rect.width / 2 - width / 2;
+  const left = Math.max(12, Math.min(centeredLeft, window.innerWidth - width - 12));
+
+  return {
+    number: marker.dataset.footnoteNumber ?? "",
+    content: marker.dataset.footnoteContent ?? "",
+    top,
+    left,
+    placement,
+  };
 }

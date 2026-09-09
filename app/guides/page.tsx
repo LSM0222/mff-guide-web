@@ -2,12 +2,16 @@ import Link from "next/link";
 import { AppShell } from "@/components/AppShell";
 import { GuideListCard } from "@/components/GuideCards";
 import { Topbar } from "@/components/Topbar";
-import { categoryMeta, guides } from "@/content";
 import { categoryDescription, categoryLabel } from "@/content/utils";
+import { categoryMeta, getGuides } from "@/sanity/lib/content";
+import { createRouteMetadata } from "../seo";
+
+export const metadata = createRouteMetadata("/guides");
 
 export default async function GuidesPage({ searchParams }: PageProps<"/guides">) {
   const params = await searchParams;
   const category = typeof params.category === "string" ? params.category : undefined;
+  const guides = await getGuides();
   const items = category ? guides.filter((guide) => guide.category === category) : guides;
   const title = category ? categoryLabel(category) : "전체 공략";
 

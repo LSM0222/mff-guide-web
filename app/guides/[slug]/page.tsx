@@ -3,26 +3,24 @@ import { notFound } from "next/navigation";
 import { AppShell } from "@/components/AppShell";
 import { GuideArticle } from "@/components/GuideArticle";
 import { Topbar } from "@/components/Topbar";
-import { guideMap, guides } from "@/content";
 import { categoryLabel } from "@/content/utils";
+import { getGuideBySlug, getGuides } from "@/sanity/lib/content";
+import { createRouteMetadata } from "../../seo";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const guides = await getGuides();
   return guides.map((guide) => ({ slug: guide.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/guides/[slug]">) {
   const { slug } = await params;
-  const guide = guideMap.get(slug);
-  return {
-    title: guide ? `${guide.title} | 겁쟁이들의쉼터` : "공략 | 겁쟁이들의쉼터",
-    description: guide?.description ?? "퓨처파이트 공략",
-  };
+  return createRouteMetadata(`/guides/${slug}`);
 }
 
 export default async function GuideDetailPage({ params, searchParams }: PageProps<"/guides/[slug]">) {
   const { slug } = await params;
   const queryParams = await searchParams;
-  const guide = guideMap.get(slug);
+  const [guide, guides] = await Promise.all([getGuideBySlug(slug), getGuides()]);
   if (!guide) notFound();
 
   const category = categoryLabel(guide.category);

@@ -1,0 +1,1549 @@
+{
+  "generatedAt": "2026-09-09T11:27:40.837Z",
+  "mode": "dry-run",
+  "source": {
+    "guides": [
+      {
+        "slug": "account",
+        "title": "계정 관련",
+        "category": "beginner",
+        "status": "published",
+        "sections": 5,
+        "headings": 11,
+        "paragraphs": 51,
+        "images": 30,
+        "videos": 0,
+        "externalImages": 6,
+        "links": [
+          "/guides/account?section=%EC%9E%8A%EC%A7%80%EB%A7%88%EC%84%B8%EC%9A%94-%EA%B3%84%EC%A0%95-%EC%97%B0%EB%8F%99",
+          "/guides/content-guide"
+        ],
+        "textHash": "24d3b85eb41176357a5a76594ca3b7268feac3ea965bd76dfc963acce7a2ad31"
+      },
+      {
+        "slug": "inventory",
+        "title": "인벤토리 정리 공략",
+        "category": "tips",
+        "status": "published",
+        "sections": 0,
+        "headings": 10,
+        "paragraphs": 10,
+        "images": 19,
+        "videos": 0,
+        "externalImages": 1,
+        "links": [],
+        "textHash": "7d8c8b45da03236eb5e3541a8e3c08e5dc52235d04223faf66f97a33eba1c8e6"
+      },
+      {
+        "slug": "legend-world-boss",
+        "title": "레전드 월드 보스 공략",
+        "category": "content",
+        "status": "published",
+        "sections": 8,
+        "headings": 8,
+        "paragraphs": 120,
+        "images": 60,
+        "videos": 4,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "da3bdbf318a6f1f9fcd0f19c0c9a6780f300920ab8c72c652db118056246dfec"
+      },
+      {
+        "slug": "early-skill-rotation",
+        "title": "초반에 유용한 영웅 스킬 로테이션",
+        "category": "beginner",
+        "status": "coming",
+        "sections": 6,
+        "headings": 6,
+        "paragraphs": 10,
+        "images": 0,
+        "videos": 4,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "64cb0ca5b917bb22145e7e0bb573f5c36e72981a1f8b92243e4852f3e2967b01"
+      },
+      {
+        "slug": "hero-selection",
+        "title": "영웅 선택권 · 생체 데이터",
+        "category": "beginner",
+        "status": "published",
+        "sections": 9,
+        "headings": 13,
+        "paragraphs": 37,
+        "images": 60,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "e2e8f9a4191ec4d0d3dfc0da89efa3fd5ddf1146cd9754f66d6e6931360f3b42"
+      },
+      {
+        "slug": "content-guide",
+        "title": "콘텐츠 안내",
+        "category": "beginner",
+        "status": "published",
+        "sections": 36,
+        "headings": 65,
+        "paragraphs": 194,
+        "images": 180,
+        "videos": 2,
+        "externalImages": 9,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card",
+          "/guides/ctp",
+          "https://docs.google.com/spreadsheets/d/10H4qt-2GSNZF7y6fr4QWLWiGiA4qAOf_VgquggoImPM/edit?usp=sharing",
+          "https://www.notion.so/31530fa6760080a4ad84c2ae84e60fb2?pvs=25#31e30fa6760080029e29ca0ab2e2cd08"
+        ],
+        "textHash": "907b6d0bc38064c5c8dd42b3736f82ef58fc2079addd4797009ccf6f3916f3f7"
+      },
+      {
+        "slug": "shadowland",
+        "title": "섀도우 랜드",
+        "category": "content",
+        "status": "published",
+        "sections": 7,
+        "headings": 7,
+        "paragraphs": 27,
+        "images": 77,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "8cb8532f495b9ac1f10fefad6ee662e7c2e49f6124adadb6457184e52964ccb8"
+      },
+      {
+        "slug": "promotion-materials",
+        "title": "각종 승급 재료 수급처",
+        "category": "growth",
+        "status": "published",
+        "sections": 4,
+        "headings": 38,
+        "paragraphs": 7,
+        "images": 46,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "7d3fc450cc0932722b908d2594326553fd570c1e35bdb46bdb17a74d19b32546"
+      },
+      {
+        "slug": "specup",
+        "title": "퓨린이 스펙업",
+        "category": "growth",
+        "status": "published",
+        "sections": 49,
+        "headings": 77,
+        "paragraphs": 254,
+        "images": 268,
+        "videos": 0,
+        "externalImages": 2,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card",
+          "/guides/ctp",
+          "/guides/inventory?section=%ED%8A%B9%EC%88%98%EC%9E%A5%EB%B9%84",
+          "/guides/specup?section=%EC%97%98%EB%A6%AC%ED%8A%B8-%EC%9E%A5%EB%B9%84-%EA%B3%B5%EB%9E%B5",
+          "/guides/specup?section=%EC%97%A0%EB%B8%94%EB%9F%BC-%EC%95%88%EB%82%B4",
+          "/guides/specup?section=%EC%9C%A0%EB%8B%88%ED%8F%BC-%EA%B3%B5%EB%9E%B5",
+          "/guides/specup?section=%ED%8C%80%EC%97%85-%EC%BB%AC%EB%A0%89%EC%85%98-%EA%B3%B5%EB%9E%B5",
+          "https://thanosvibs.money/tierlist"
+        ],
+        "textHash": "314e369fc212a586ef9c7c8048b0ac8d901e43b045b8ecd68b2b48243b980d1d"
+      },
+      {
+        "slug": "comic-card",
+        "title": "코믹스 카드",
+        "category": "growth",
+        "status": "published",
+        "sections": 18,
+        "headings": 24,
+        "paragraphs": 160,
+        "images": 75,
+        "videos": 6,
+        "externalImages": 3,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card?section=%ED%93%A8%EB%A6%B0%EC%9D%B4-%EC%B9%B4%EB%93%9C-%EA%B3%B5%EB%9E%B5",
+          "/guides/comic-card?section=%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%BD%94%EB%AF%B9%EC%8A%A4-%EC%B9%B4%EB%93%9C"
+        ],
+        "textHash": "da2fe608f41f005f52dfc8d8e8060233893d4fb640b6ce8a38900f0a87710d4e"
+      },
+      {
+        "slug": "x-of-sword",
+        "title": "X 오브 소드 인챈트",
+        "category": "growth",
+        "status": "published",
+        "sections": 17,
+        "headings": 17,
+        "paragraphs": 74,
+        "images": 49,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/x-of-sword"
+        ],
+        "textHash": "45da5671f20c0ef25e37a69c342d3c22dc2a7cbfa3bfb86cdbabebc6f84feaef"
+      },
+      {
+        "slug": "jarvis",
+        "title": "J.A.R.V.I.S.",
+        "category": "growth",
+        "status": "published",
+        "sections": 8,
+        "headings": 8,
+        "paragraphs": 44,
+        "images": 21,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "fc6c46b3c33cf34337218957627f2659a03b2ac31bcc6d093791b72506e9cdaa"
+      },
+      {
+        "slug": "ctp",
+        "title": "특수 장비 · C.T.P.",
+        "category": "growth",
+        "status": "published",
+        "sections": 8,
+        "headings": 10,
+        "paragraphs": 78,
+        "images": 63,
+        "videos": 0,
+        "externalImages": 1,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "dedf0abc0835cd46e5c57c806e3e9be601604d1d6a3dd511d7aa293c441d4424"
+      },
+      {
+        "slug": "season-uniform",
+        "title": "시즌 유니폼",
+        "category": "growth",
+        "status": "published",
+        "sections": 5,
+        "headings": 5,
+        "paragraphs": 90,
+        "images": 44,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "c280b87a23fac246c831b08daf9a17d1d13ea63f49fbda66df178a70489014ac"
+      },
+      {
+        "slug": "artifact",
+        "title": "아티팩트",
+        "category": "growth",
+        "status": "published",
+        "sections": 44,
+        "headings": 45,
+        "paragraphs": 40,
+        "images": 35,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "4237dbb1fba04d759ac615faf8f96c89463a088d7210d9e6e21fb1a0a67a669f"
+      },
+      {
+        "slug": "tips",
+        "title": "자잘한 팁",
+        "category": "tips",
+        "status": "published",
+        "sections": 1,
+        "headings": 1,
+        "paragraphs": 4,
+        "images": 1,
+        "videos": 5,
+        "externalImages": 1,
+        "links": [],
+        "textHash": "5d0bddbce9def779399c03288277d78c6c0045c97035a21cde29cd3c5bc1a37b"
+      },
+      {
+        "slug": "damage-buff",
+        "title": "피해량 증감 버프",
+        "category": "tips",
+        "status": "published",
+        "sections": 90,
+        "headings": 90,
+        "paragraphs": 7,
+        "images": 82,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "2a4a4bff6bb34482423f317f6981db89c000531664ce0b9b030a0f8c806f7349"
+      },
+      {
+        "slug": "status-cleanse",
+        "title": "상태이상제거 버프",
+        "category": "tips",
+        "status": "published",
+        "sections": 9,
+        "headings": 9,
+        "paragraphs": 22,
+        "images": 205,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "dd75af00ab8560f42cbdc63f963f5c1da1248c6a2cb07d2bb4786cc3757de287"
+      },
+      {
+        "slug": "otherworld",
+        "title": "아더월드 배틀",
+        "category": "content",
+        "status": "coming",
+        "sections": 2,
+        "headings": 2,
+        "paragraphs": 11,
+        "images": 19,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "7838dc9b65bf0689e530a2d8f0e6d25c8b7bdfa7eca567b8ef61d49b9f71c7e5"
+      },
+      {
+        "slug": "spending",
+        "title": "과금 관련",
+        "category": "tips",
+        "status": "coming",
+        "sections": 0,
+        "headings": 0,
+        "paragraphs": 2,
+        "images": 2,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "94dd76c532f0bab90c6bc504352e4d97b057c341410c127ac96ed5d0c248fc8e"
+      },
+      {
+        "slug": "alliance-battle",
+        "title": "얼라이언스 배틀 · 극레얼",
+        "category": "content",
+        "status": "published",
+        "sections": 1,
+        "headings": 2,
+        "paragraphs": 7,
+        "images": 4,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides/alliance-battle?section=%EA%B7%B9%EB%A0%88%EC%96%BC-%EC%98%81%EC%83%81-made-by-msy%EC%9E%85%EB%8B%88%EB%8B%A4",
+          "https://mff-guide.vercel.app/"
+        ],
+        "textHash": "537f62f53cf3aa296dec243c7b39598fa8a15d9e52b24f3f158749831f0ac17c"
+      },
+      {
+        "slug": "events",
+        "title": "이벤트",
+        "category": "tips",
+        "status": "coming",
+        "sections": 8,
+        "headings": 8,
+        "paragraphs": 20,
+        "images": 23,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "9cabe18cac23468970876694d85c2612ef9aa0ccee0cb0899cd98eaac315c35b"
+      }
+    ],
+    "glossary": [
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 5,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "83e47c3142c99347910b10d4a62c857f662f6298593971f93d375c939cacba47"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "7c52511a99592f72e6b7447c0a9a6e82f82cc4ae52532695ae2bf814d414a47b"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 3,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "d19745ec4ca78c9d5f9e12adf4c1dd82cf0d8b09f12b259c4cd128f4c5337ba5"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "a1f566cf7952b6cf8fcb5d72d3ff91d303d1eb29bba5dbac7e563d1f08f0ff9b"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "56a4f28851758a0325f31a5499a5de81ddf8c026852698a0dcc875a03992f3ba"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 3,
+        "imageCount": 2,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1064.png",
+          "/media/image 1065.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "bf9f5ee4bf52906f3ed5620874e5cd506829b45adb87a6b5cd49b1b2d6b4bdcd"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 4,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [
+          "/guides"
+        ],
+        "textHash": "65651dd8a41b7a7d8c270de58641ece4baf44cbf87fa150d1144a6a116e04d32"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 3,
+        "imageCount": 2,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1066.png",
+          "/media/image 1067.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "3754b601763a7207bb2f0dc085ade301edfc2406e414a26a51dfb7640e0a2979"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1068.png"
+        ],
+        "localVideos": [],
+        "links": [
+          "/guides"
+        ],
+        "textHash": "9b55a22eb3c93c31cdf34e08539181631565400662f5b2748819cf857f15fb31"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1069.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "df0e2d13eb991454693ae55a729cf58b35d8c87bb886d46da710ebb1555bf949"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [
+          "/guides"
+        ],
+        "textHash": "ba01a077687d0feaa18fc71cd211a4fabf56331486d1f18eb8b6b357bdb64d0a"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "f41d120fd559193d165e84e72f2afb2c3ce90b0525e0d61c26c2dba917782954"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1070.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "c5ece8ca885de56666a958707d2e007698e9fdd475882d47e3d47a4d53fd8b6d"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 3,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1071.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "9d6b27580c79c22535c5401ccf9e375c82ad953f6dd362d3e5b97f5cb1961803"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [
+          "/guides"
+        ],
+        "textHash": "a35ebe7090f1172bdd4861e9f4e2aadd78a236d57d5e47be798706d66ecb3f7e"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "a0258a13ab64d5ab962f1ca42429eb73db6b8017d8a57a86cb0fa84231ba8a31"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "b3657983b8a907776aed614111296a700b8eade6e0a322c62e6b25f813391a3c"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1072.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "679a746225574bd4bfedf95ce98b5a48d104920bcd02a4661e7fc9683f29a531"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "708437ba2336f86b688f67148cee9057265cf6db21c82ed8420b35e29e1d7bef"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "87c92a7cae2743d7141c94db3ea29e3983db781e36fea618aab35d6093037bd4"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "9a296f3f4a489c21fa42a1cfe6413e26f440a03388dbf40363ca3c1f3e06b305"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "804df0a9d1413d3ae0f3ed49e012a1865fa136b07b792455914c8cb0e4ab0a35"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "14b02bb58d69788a7b323cfe298027fa7545779673b546e469143a1f1982b30c"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "8f695ddc7623dfaabab8b553cd68f154370587de307f818256ae382e8ec13139"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [
+          "/guides/comic-card"
+        ],
+        "textHash": "614c93322e039b9bffe694ccb94aa6032d4314e91cfcef112b233c974dcf1462"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "c5af9fd4ec2e7e64dd62771de49f43118f2f4452bc1edcde83108b2440a1dc67"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1073.png",
+          "/media/d56c5fd7-343b-4cea-bf1d-5e34e53be359.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "6c9d8ff086ad7f12fb2b15ad9da1fb8065bca917b6f9b54041be9be316e18e80"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 4,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "36bf8aa06a5391f5ffa06fd41114bc0d2d29f9e5172e9d13983e070c322ac1c7"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [
+          "/guides/content-guide"
+        ],
+        "textHash": "21a13d401d808cbad1ec1fb7d2642ede7a549669f66c438afc876bf1ff29e17f"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 1,
+        "imageCount": 1,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [
+          "/media/image 1074.png"
+        ],
+        "localVideos": [],
+        "links": [],
+        "textHash": "d4942fc62abdf0975249a02112fff664922b113f5c57c22066ca78b74fb35a96"
+      },
+      {
+        "sectionCount": 0,
+        "headingCount": 0,
+        "paragraphCount": 4,
+        "imageCount": 0,
+        "videoCount": 0,
+        "externalImageCount": 0,
+        "localImages": [],
+        "localVideos": [],
+        "links": [],
+        "textHash": "fc987846a989a6a7e298814ad4101a85bae82f2218e886301a49cd1f8472389d"
+      }
+    ],
+    "site": {
+      "usefulLinks": 4,
+      "updates": 5,
+      "popularGuides": 5
+    }
+  },
+  "migrated": {
+    "guides": [
+      {
+        "slug": "account",
+        "title": "계정 관련",
+        "category": "beginner",
+        "status": "published",
+        "sections": 5,
+        "headings": 11,
+        "paragraphs": 51,
+        "images": 30,
+        "videos": 0,
+        "externalImages": 6,
+        "links": [
+          "/guides/account?section=%EC%9E%8A%EC%A7%80%EB%A7%88%EC%84%B8%EC%9A%94-%EA%B3%84%EC%A0%95-%EC%97%B0%EB%8F%99",
+          "/guides/content-guide"
+        ],
+        "textHash": "24d3b85eb41176357a5a76594ca3b7268feac3ea965bd76dfc963acce7a2ad31"
+      },
+      {
+        "slug": "inventory",
+        "title": "인벤토리 정리 공략",
+        "category": "tips",
+        "status": "published",
+        "sections": 0,
+        "headings": 10,
+        "paragraphs": 10,
+        "images": 19,
+        "videos": 0,
+        "externalImages": 1,
+        "links": [],
+        "textHash": "7d8c8b45da03236eb5e3541a8e3c08e5dc52235d04223faf66f97a33eba1c8e6"
+      },
+      {
+        "slug": "legend-world-boss",
+        "title": "레전드 월드 보스 공략",
+        "category": "content",
+        "status": "published",
+        "sections": 6,
+        "headings": 8,
+        "paragraphs": 120,
+        "images": 60,
+        "videos": 4,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "da3bdbf318a6f1f9fcd0f19c0c9a6780f300920ab8c72c652db118056246dfec"
+      },
+      {
+        "slug": "early-skill-rotation",
+        "title": "초반에 유용한 영웅 스킬 로테이션",
+        "category": "beginner",
+        "status": "coming",
+        "sections": 6,
+        "headings": 6,
+        "paragraphs": 10,
+        "images": 0,
+        "videos": 4,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "64cb0ca5b917bb22145e7e0bb573f5c36e72981a1f8b92243e4852f3e2967b01"
+      },
+      {
+        "slug": "hero-selection",
+        "title": "영웅 선택권 · 생체 데이터",
+        "category": "beginner",
+        "status": "published",
+        "sections": 6,
+        "headings": 13,
+        "paragraphs": 37,
+        "images": 60,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "e2e8f9a4191ec4d0d3dfc0da89efa3fd5ddf1146cd9754f66d6e6931360f3b42"
+      },
+      {
+        "slug": "content-guide",
+        "title": "콘텐츠 안내",
+        "category": "beginner",
+        "status": "published",
+        "sections": 15,
+        "headings": 65,
+        "paragraphs": 194,
+        "images": 180,
+        "videos": 2,
+        "externalImages": 9,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card",
+          "/guides/comic-card",
+          "/guides/ctp",
+          "https://docs.google.com/spreadsheets/d/10H4qt-2GSNZF7y6fr4QWLWiGiA4qAOf_VgquggoImPM/edit?usp=sharing",
+          "https://www.notion.so/31530fa6760080a4ad84c2ae84e60fb2?pvs=25#31e30fa6760080029e29ca0ab2e2cd08"
+        ],
+        "textHash": "907b6d0bc38064c5c8dd42b3736f82ef58fc2079addd4797009ccf6f3916f3f7"
+      },
+      {
+        "slug": "shadowland",
+        "title": "섀도우 랜드",
+        "category": "content",
+        "status": "published",
+        "sections": 3,
+        "headings": 7,
+        "paragraphs": 27,
+        "images": 77,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "8cb8532f495b9ac1f10fefad6ee662e7c2e49f6124adadb6457184e52964ccb8"
+      },
+      {
+        "slug": "promotion-materials",
+        "title": "각종 승급 재료 수급처",
+        "category": "growth",
+        "status": "published",
+        "sections": 4,
+        "headings": 38,
+        "paragraphs": 7,
+        "images": 46,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "7d3fc450cc0932722b908d2594326553fd570c1e35bdb46bdb17a74d19b32546"
+      },
+      {
+        "slug": "specup",
+        "title": "퓨린이 스펙업",
+        "category": "growth",
+        "status": "published",
+        "sections": 3,
+        "headings": 77,
+        "paragraphs": 254,
+        "images": 268,
+        "videos": 0,
+        "externalImages": 2,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card",
+          "/guides/ctp",
+          "/guides/inventory?section=%ED%8A%B9%EC%88%98%EC%9E%A5%EB%B9%84",
+          "/guides/inventory?section=%ED%8A%B9%EC%88%98%EC%9E%A5%EB%B9%84",
+          "/guides/specup?section=%EC%97%98%EB%A6%AC%ED%8A%B8-%EC%9E%A5%EB%B9%84-%EA%B3%B5%EB%9E%B5",
+          "/guides/specup?section=%EC%97%A0%EB%B8%94%EB%9F%BC-%EC%95%88%EB%82%B4",
+          "/guides/specup?section=%EC%9C%A0%EB%8B%88%ED%8F%BC-%EA%B3%B5%EB%9E%B5",
+          "/guides/specup?section=%ED%8C%80%EC%97%85-%EC%BB%AC%EB%A0%89%EC%85%98-%EA%B3%B5%EB%9E%B5",
+          "https://thanosvibs.money/tierlist"
+        ],
+        "textHash": "314e369fc212a586ef9c7c8048b0ac8d901e43b045b8ecd68b2b48243b980d1d"
+      },
+      {
+        "slug": "comic-card",
+        "title": "코믹스 카드",
+        "category": "growth",
+        "status": "published",
+        "sections": 10,
+        "headings": 24,
+        "paragraphs": 160,
+        "images": 75,
+        "videos": 6,
+        "externalImages": 3,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/comic-card?section=%ED%93%A8%EB%A6%B0%EC%9D%B4-%EC%B9%B4%EB%93%9C-%EA%B3%B5%EB%9E%B5",
+          "/guides/comic-card?section=%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%BD%94%EB%AF%B9%EC%8A%A4-%EC%B9%B4%EB%93%9C"
+        ],
+        "textHash": "da2fe608f41f005f52dfc8d8e8060233893d4fb640b6ce8a38900f0a87710d4e"
+      },
+      {
+        "slug": "x-of-sword",
+        "title": "X 오브 소드 인챈트",
+        "category": "growth",
+        "status": "published",
+        "sections": 5,
+        "headings": 17,
+        "paragraphs": 74,
+        "images": 49,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides/x-of-sword",
+          "/guides/x-of-sword"
+        ],
+        "textHash": "45da5671f20c0ef25e37a69c342d3c22dc2a7cbfa3bfb86cdbabebc6f84feaef"
+      },
+      {
+        "slug": "jarvis",
+        "title": "J.A.R.V.I.S.",
+        "category": "growth",
+        "status": "published",
+        "sections": 3,
+        "headings": 8,
+        "paragraphs": 44,
+        "images": 21,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "fc6c46b3c33cf34337218957627f2659a03b2ac31bcc6d093791b72506e9cdaa"
+      },
+      {
+        "slug": "ctp",
+        "title": "특수 장비 · C.T.P.",
+        "category": "growth",
+        "status": "published",
+        "sections": 8,
+        "headings": 10,
+        "paragraphs": 78,
+        "images": 63,
+        "videos": 0,
+        "externalImages": 1,
+        "links": [
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "dedf0abc0835cd46e5c57c806e3e9be601604d1d6a3dd511d7aa293c441d4424"
+      },
+      {
+        "slug": "season-uniform",
+        "title": "시즌 유니폼",
+        "category": "growth",
+        "status": "published",
+        "sections": 5,
+        "headings": 5,
+        "paragraphs": 90,
+        "images": 44,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "c280b87a23fac246c831b08daf9a17d1d13ea63f49fbda66df178a70489014ac"
+      },
+      {
+        "slug": "artifact",
+        "title": "아티팩트",
+        "category": "growth",
+        "status": "published",
+        "sections": 2,
+        "headings": 45,
+        "paragraphs": 40,
+        "images": 35,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "4237dbb1fba04d759ac615faf8f96c89463a088d7210d9e6e21fb1a0a67a669f"
+      },
+      {
+        "slug": "tips",
+        "title": "자잘한 팁",
+        "category": "tips",
+        "status": "published",
+        "sections": 1,
+        "headings": 1,
+        "paragraphs": 4,
+        "images": 1,
+        "videos": 5,
+        "externalImages": 1,
+        "links": [],
+        "textHash": "5d0bddbce9def779399c03288277d78c6c0045c97035a21cde29cd3c5bc1a37b"
+      },
+      {
+        "slug": "damage-buff",
+        "title": "피해량 증감 버프",
+        "category": "tips",
+        "status": "published",
+        "sections": 1,
+        "headings": 90,
+        "paragraphs": 7,
+        "images": 82,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "2a4a4bff6bb34482423f317f6981db89c000531664ce0b9b030a0f8c806f7349"
+      },
+      {
+        "slug": "status-cleanse",
+        "title": "상태이상제거 버프",
+        "category": "tips",
+        "status": "published",
+        "sections": 1,
+        "headings": 9,
+        "paragraphs": 62,
+        "images": 205,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "dd75af00ab8560f42cbdc63f963f5c1da1248c6a2cb07d2bb4786cc3757de287"
+      },
+      {
+        "slug": "otherworld",
+        "title": "아더월드 배틀",
+        "category": "content",
+        "status": "coming",
+        "sections": 2,
+        "headings": 2,
+        "paragraphs": 11,
+        "images": 19,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "7838dc9b65bf0689e530a2d8f0e6d25c8b7bdfa7eca567b8ef61d49b9f71c7e5"
+      },
+      {
+        "slug": "spending",
+        "title": "과금 관련",
+        "category": "tips",
+        "status": "coming",
+        "sections": 0,
+        "headings": 0,
+        "paragraphs": 2,
+        "images": 2,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [],
+        "textHash": "94dd76c532f0bab90c6bc504352e4d97b057c341410c127ac96ed5d0c248fc8e"
+      },
+      {
+        "slug": "alliance-battle",
+        "title": "얼라이언스 배틀 · 극레얼",
+        "category": "content",
+        "status": "published",
+        "sections": 1,
+        "headings": 2,
+        "paragraphs": 7,
+        "images": 4,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides/alliance-battle?section=%EA%B7%B9%EB%A0%88%EC%96%BC-%EC%98%81%EC%83%81-made-by-msy%EC%9E%85%EB%8B%88%EB%8B%A4",
+          "https://mff-guide.vercel.app/"
+        ],
+        "textHash": "537f62f53cf3aa296dec243c7b39598fa8a15d9e52b24f3f158749831f0ac17c"
+      },
+      {
+        "slug": "events",
+        "title": "이벤트",
+        "category": "tips",
+        "status": "coming",
+        "sections": 5,
+        "headings": 8,
+        "paragraphs": 20,
+        "images": 23,
+        "videos": 0,
+        "externalImages": 0,
+        "links": [
+          "/guides",
+          "/guides"
+        ],
+        "textHash": "9cabe18cac23468970876694d85c2612ef9aa0ccee0cb0899cd98eaac315c35b"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "차틈/일틈/영틈/신틈",
+        "category": "PVE 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "83e47c3142c99347910b10d4a62c857f662f6298593971f93d375c939cacba47"
+      },
+      {
+        "term": "버스/거보레 버스/돌맘/도르마무",
+        "category": "PVE 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "7c52511a99592f72e6b7447c0a9a6e82f82cc4ae52532695ae2bf814d414a47b"
+      },
+      {
+        "term": "주자/얼배 주자/대체 주자",
+        "category": "PVE 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "d19745ec4ca78c9d5f9e12adf4c1dd82cf0d8b09f12b259c4cd128f4c5337ba5"
+      },
+      {
+        "term": "포효 캔슬(포씹)",
+        "category": "PVE 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "a1f566cf7952b6cf8fcb5d72d3ff91d303d1eb29bba5dbac7e563d1f08f0ff9b"
+      },
+      {
+        "term": "포효 밀기(포밀)",
+        "category": "PVE 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "56a4f28851758a0325f31a5499a5de81ddf8c026852698a0dcc875a03992f3ba"
+      },
+      {
+        "term": "불굴/짭불굴",
+        "category": "PVP 관련",
+        "images": 2,
+        "videos": 0,
+        "links": [],
+        "textHash": "bf9f5ee4bf52906f3ed5620874e5cd506829b45adb87a6b5cd49b1b2d6b4bdcd"
+      },
+      {
+        "term": "상면/상태이상제거/상태이상면역",
+        "category": "PVP 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "65651dd8a41b7a7d8c270de58641ece4baf44cbf87fa150d1144a6a116e04d32"
+      },
+      {
+        "term": "효과관통",
+        "category": "PVP 관련",
+        "images": 2,
+        "videos": 0,
+        "links": [],
+        "textHash": "3754b601763a7207bb2f0dc085ade301edfc2406e414a26a51dfb7640e0a2979"
+      },
+      {
+        "term": "발작/최후의 발악",
+        "category": "PVP 관련",
+        "images": 1,
+        "videos": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "9b55a22eb3c93c31cdf34e08539181631565400662f5b2748819cf857f15fb31"
+      },
+      {
+        "term": "가드 브레이크/슈퍼 가드브레이크",
+        "category": "PVP 관련",
+        "images": 1,
+        "videos": 0,
+        "links": [],
+        "textHash": "df0e2d13eb991454693ae55a729cf58b35d8c87bb886d46da710ebb1555bf949"
+      },
+      {
+        "term": "추가 관통 피해량 감소 (추관피감)",
+        "category": "PVP 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "ba01a077687d0feaa18fc71cd211a4fabf56331486d1f18eb8b6b357bdb64d0a"
+      },
+      {
+        "term": "C.T.P. 줄임말 (강분, 찬경, 강해, 찬통 등)",
+        "category": "특수장비 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "f41d120fd559193d165e84e72f2afb2c3ce90b0525e0d61c26c2dba917782954"
+      },
+      {
+        "term": "되갚/되갚기",
+        "category": "특수장비 관련",
+        "images": 1,
+        "videos": 0,
+        "links": [],
+        "textHash": "c5ece8ca885de56666a958707d2e007698e9fdd475882d47e3d47a4d53fd8b6d"
+      },
+      {
+        "term": "짭분/짭분노",
+        "category": "특수장비 관련",
+        "images": 1,
+        "videos": 0,
+        "links": [],
+        "textHash": "9d6b27580c79c22535c5401ccf9e375c82ad953f6dd362d3e5b97f5cb1961803"
+      },
+      {
+        "term": "재련",
+        "category": "특수장비 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [
+          "/guides"
+        ],
+        "textHash": "a35ebe7090f1172bdd4861e9f4e2aadd78a236d57d5e47be798706d66ecb3f7e"
+      },
+      {
+        "term": "집중",
+        "category": "특수장비 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "a0258a13ab64d5ab962f1ca42429eb73db6b8017d8a57a86cb0fa84231ba8a31"
+      },
+      {
+        "term": "영웅 정보 관련 용어, 줄임말 정리",
+        "category": "영웅 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "b3657983b8a907776aed614111296a700b8eade6e0a322c62e6b25f813391a3c"
+      },
+      {
+        "term": "분헐 (분노한 헐크의 힘)",
+        "category": "영웅 관련",
+        "images": 1,
+        "videos": 0,
+        "links": [],
+        "textHash": "679a746225574bd4bfedf95ce98b5a48d104920bcd02a4661e7fc9683f29a531"
+      },
+      {
+        "term": "태생캐",
+        "category": "영웅 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "708437ba2336f86b688f67148cee9057265cf6db21c82ed8420b35e29e1d7bef"
+      },
+      {
+        "term": "더블태생/덥태",
+        "category": "영웅 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "87c92a7cae2743d7141c94db3ea29e3983db781e36fea618aab35d6093037bd4"
+      },
+      {
+        "term": "고진권, 고승권, 타강권, 고신권, 고잠강, 고잠초, 유신권",
+        "category": "영웅 관련",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "9a296f3f4a489c21fa42a1cfe6413e26f440a03388dbf40363ca3c1f3e06b305"
+      },
+      {
+        "term": "공용포",
+        "category": "스킬 용어",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "804df0a9d1413d3ae0f3ed49e012a1865fa136b07b792455914c8cb0e4ab0a35"
+      },
+      {
+        "term": "방용포",
+        "category": "스킬 용어",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "14b02bb58d69788a7b323cfe298027fa7545779673b546e469143a1f1982b30c"
+      },
+      {
+        "term": "생용포",
+        "category": "스킬 용어",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "8f695ddc7623dfaabab8b553cd68f154370587de307f818256ae382e8ec13139"
+      },
+      {
+        "term": "추가 관통 피해",
+        "category": "스킬 용어",
+        "images": 0,
+        "videos": 0,
+        "links": [
+          "/guides/comic-card"
+        ],
+        "textHash": "614c93322e039b9bffe694ccb94aa6032d4314e91cfcef112b233c974dcf1462"
+      },
+      {
+        "term": "상공, 추업, 추추업",
+        "category": "기타",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "c5af9fd4ec2e7e64dd62771de49f43118f2f4452bc1edcde83108b2440a1dc67"
+      },
+      {
+        "term": "감자, 고구마",
+        "category": "기타",
+        "images": 2,
+        "videos": 0,
+        "links": [],
+        "textHash": "6c9d8ff086ad7f12fb2b15ad9da1fb8065bca917b6f9b54041be9be316e18e80"
+      },
+      {
+        "term": "모든 “일반” 공격력의 의미",
+        "category": "기타",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "36bf8aa06a5391f5ffa06fd41114bc0d2d29f9e5172e9d13983e070c322ac1c7"
+      },
+      {
+        "term": "“천성” 이 뭘까",
+        "category": "기타",
+        "images": 0,
+        "videos": 0,
+        "links": [
+          "/guides/content-guide"
+        ],
+        "textHash": "21a13d401d808cbad1ec1fb7d2642ede7a549669f66c438afc876bf1ff29e17f"
+      },
+      {
+        "term": "부스트 포인트, 부포",
+        "category": "기타",
+        "images": 1,
+        "videos": 0,
+        "links": [],
+        "textHash": "d4942fc62abdf0975249a02112fff664922b113f5c57c22066ca78b74fb35a96"
+      },
+      {
+        "term": "마몰 갤투 돌맘",
+        "category": "기타",
+        "images": 0,
+        "videos": 0,
+        "links": [],
+        "textHash": "fc987846a989a6a7e298814ad4101a85bae82f2218e886301a49cd1f8472389d"
+      }
+    ],
+    "site": {
+      "usefulLinks": 4,
+      "updates": 5,
+      "popularGuides": 5
+    }
+  },
+  "remote": null,
+  "media": {
+    "localReferenceCount": 1275,
+    "localMissing": [],
+    "imageCount": 1363,
+    "videoCount": 21,
+    "externalImageCount": 23
+  },
+  "parity": {
+    "ok": true,
+    "mismatches": []
+  }
+}
