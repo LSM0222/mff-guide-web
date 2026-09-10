@@ -16,8 +16,53 @@
   display: none;
 }
 
+.floating-nav {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
 .floating-nav.show-home .floating-home {
   display: flex;
+}
+
+.floating-action {
+  width: 44px;
+  min-height: 58px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid rgba(93, 120, 166, 0.72);
+  border-radius: 12px;
+  background: rgba(8, 21, 39, 0.86);
+  color: #dce6f5;
+  font-size: 18px;
+  font-weight: 850;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.floating-action span {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.floating-action:hover,
+.floating-action:focus-visible {
+  border-color: rgba(127, 108, 255, 0.86);
+  color: #ffffff;
 }
 
 .global-search button {
@@ -29,15 +74,10 @@
   margin-top: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
   min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding-bottom: 2px;
-}
-
-.hero-useful-links::-webkit-scrollbar {
-  display: none;
 }
 
 .hero-useful-label {
@@ -241,6 +281,22 @@
 }
 
 @media (max-width: 680px) {
+  .floating-nav {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .floating-action {
+    width: 38px;
+    min-height: 52px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .floating-action span {
+    font-size: 9px;
+  }
+
   .image-lightbox {
     padding: 14px;
   }

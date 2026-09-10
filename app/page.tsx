@@ -18,7 +18,7 @@ export default async function Home() {
             <section className="hero">
               <div className="hero-kicker">FUTURE FIGHT COMMUNITY GUIDE</div>
               <h1>겁쟁이들의쉼터</h1>
-              <p>퓨처파이트 공략을 한 곳에서 빠르게 찾아보세요.</p>
+              <p>마블 퓨처파이트 공략을 한 곳에서 빠르게 찾아보세요.</p>
               <SearchForm />
               <div className="hero-useful-links">
                 <span className="hero-useful-label">유용한 링크</span>

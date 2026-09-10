@@ -1,5 +1,6 @@
 import { toHTML } from "@portabletext/to-html";
 import type { TypedObject } from "@portabletext/types";
+import { needsNoReferrerPolicy } from "@/lib/imageReferrerPolicy";
 
 type CmsBlock = Record<string, unknown> & { _type?: string };
 type PortableComponentProps = {
@@ -81,7 +82,8 @@ export function blocksToText(blocks: CmsBlock[] = []): string {
 function renderImage(block: CmsBlock): string {
   const src = mediaSrc(block);
   if (!src) return "";
-  return `<figure class="media-asset image"><img alt="${escapeHtml(block.alt || block.caption || "")}" loading="lazy" src="${escapeHtml(src)}"/>${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ""}</figure>`;
+  const referrerPolicy = needsNoReferrerPolicy(src) ? ' referrerpolicy="no-referrer"' : "";
+  return `<figure class="media-asset image"><img alt="${escapeHtml(block.alt || block.caption || "")}" loading="lazy" src="${escapeHtml(src)}"${referrerPolicy}/>${block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : ""}</figure>`;
 }
 
 function renderVideo(block: CmsBlock): string {
@@ -97,7 +99,7 @@ function renderBlocksWithContext(blocks: CmsBlock[] = [], context: RenderContext
 function portableComponents(context: RenderContext) {
   return {
     marks: {
-      link: ({ children = "", value }: PortableComponentProps) => `<a href="${escapeHtml(asBlock(value).href ?? "#")}">${children}</a>`,
+      link: ({ children = "", value }: PortableComponentProps) => renderLink(children, asBlock(value)),
       highlight: ({ children = "" }: PortableComponentProps) => `<mark>${children}</mark>`,
       "strike-through": ({ children = "" }: PortableComponentProps) => `<del>${children}</del>`,
       footnote: ({ children = "", value }: PortableComponentProps) => renderFootnote(children, asBlock(value), context),
@@ -127,6 +129,13 @@ function portableComponents(context: RenderContext) {
       number: ({ children = "" }: PortableComponentProps) => `<li>${children}</li>`,
     },
   };
+}
+
+function renderLink(children: string, block: CmsBlock): string {
+  const href = stringValue(block.href).trim();
+  if (!href) return children;
+  const externalAttrs = isExternalHref(href) ? ' target="_blank" rel="noopener noreferrer"' : "";
+  return `<a href="${escapeHtml(href)}"${externalAttrs}>${children}</a>`;
 }
 
 function renderFootnote(children: string, block: CmsBlock, context: RenderContext): string {
@@ -174,6 +183,10 @@ function stringArray(value: unknown): string[] {
 
 function stringValue(value: unknown): string {
   return typeof value === "string" ? value : "";
+}
+
+function isExternalHref(href: string): boolean {
+  return /^https?:\/\//i.test(href);
 }
 
 function currentSlug(value: unknown): string {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { needsNoReferrerPolicy } from "@/lib/imageReferrerPolicy";
 
 type FootnoteState = {
   number: string;
@@ -8,6 +9,13 @@ type FootnoteState = {
   top: number;
   left: number;
   placement: "above" | "below";
+};
+
+type LightboxState = {
+  src: string;
+  alt: string;
+  caption: string;
+  referrerPolicy?: "no-referrer";
 };
 
 function markPortrait(img: HTMLImageElement) {
@@ -71,7 +79,7 @@ function scrollToSection(section: string) {
 }
 
 export function ArticleEnhancer({ query, section }: { query: string; section: string }) {
-  const [lightbox, setLightbox] = useState<{ src: string; alt: string; caption: string } | null>(null);
+  const [lightbox, setLightbox] = useState<LightboxState | null>(null);
   const [footnote, setFootnote] = useState<FootnoteState | null>(null);
   const popoverRef = useRef<HTMLDivElement | null>(null);
 
@@ -81,6 +89,9 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
 
     const imgs = Array.from(root.querySelectorAll<HTMLImageElement>("figure.media-asset.image img"));
     imgs.forEach((img) => {
+      if (needsNoReferrerPolicy(img.currentSrc || img.src || img.getAttribute("src") || "")) {
+        img.referrerPolicy = "no-referrer";
+      }
       if (img.complete) markPortrait(img);
       else img.addEventListener("load", () => markPortrait(img), { once: true });
     });
@@ -110,6 +121,7 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
         src,
         alt: target.alt || "",
         caption: target.closest("figure")?.querySelector("figcaption")?.textContent?.trim() || target.alt || "",
+        referrerPolicy: needsNoReferrerPolicy(src) ? "no-referrer" : undefined,
       });
     };
 
@@ -211,7 +223,7 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
           </button>
           <figure onClick={(event) => event.stopPropagation()}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={lightboxSrc} alt={lightbox.alt} />
+            <img src={lightboxSrc} alt={lightbox.alt} referrerPolicy={lightbox.referrerPolicy} />
             {lightbox.caption ? <figcaption>{lightbox.caption}</figcaption> : null}
           </figure>
         </div>
