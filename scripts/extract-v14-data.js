@@ -1,8 +1,9 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = path.resolve(__dirname, "..");
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(scriptDir, "..");
 const sourcePath = path.resolve(root, "..", "mff_guide_full_prototype_v14_lightbox.html");
 const contentRoot = path.join(root, "content");
 const guidesRoot = path.join(contentRoot, "guides");

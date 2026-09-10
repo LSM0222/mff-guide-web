@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function StudioLayout({ children }: LayoutProps<"/studio/[[...tool]]">) {
+export default function StudioLayout({ children }: LayoutProps<"/studio">) {
   return children;
 }

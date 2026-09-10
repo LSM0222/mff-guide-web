@@ -19,6 +19,10 @@
 
 # production
 /build
+/dist/
+.sanity/
+.vinext/
+.wrangler/
 
 # misc
 .DS_Store

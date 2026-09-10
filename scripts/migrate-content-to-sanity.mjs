@@ -9,8 +9,8 @@ import { getCliClient } from "sanity/cli";
 import * as parse5 from "parse5";
 import ts from "typescript";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.resolve(__dirname, "..");
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = path.resolve(scriptDir, "..");
 const reportPath = path.join(rootDir, "migration-dry-run.report.json");
 const auditReportPath = path.join(rootDir, "sanity-migration-audit.report.json");
 const apiVersion = "2025-01-01";
