@@ -47,7 +47,9 @@ export function renderGuideHtml(guide: CmsBlock): string {
       const level = Math.max(2, Math.min(4, Number(section.level ?? 3)));
       const heading = `h${level}`;
       const depth = `depth-${level - 1}`;
-      return `<section class="article-subsection ${depth}"${anchor ? ` id="${escapeHtml(anchor)}"` : ""}><${heading}>${escapeHtml(section.title)}</${heading}>${renderBlocksWithContext(blockArray(section.blocks), context)}</section>`;
+      const anchorAttrs = anchor ? ` data-section-anchor="${escapeHtml(anchor)}"` : "";
+      const headingAttrs = anchor ? ` id="${escapeHtml(anchor)}"` : "";
+      return `<section class="article-subsection ${depth}"${anchorAttrs}><${heading}${headingAttrs}>${escapeHtml(section.title)}</${heading}>${renderBlocksWithContext(blockArray(section.blocks), context)}</section>`;
     })
     .join("");
   return `${body}${sections}`;
@@ -115,10 +117,10 @@ function portableComponents(context: RenderContext) {
       linkCard: ({ value }: PortableComponentProps) => `<div class="link-card"><a href="${escapeHtml(asBlock(value).href)}">${escapeHtml(asBlock(value).label)}</a></div>`,
     },
     block: {
-      normal: ({ children = "" }: PortableComponentProps) => `<p>${children}</p>`,
-      h2: ({ children = "", value }: PortableComponentProps) => `<h2${idAttr(asBlock(value))}>${children}</h2>`,
-      h3: ({ children = "", value }: PortableComponentProps) => `<h3${idAttr(asBlock(value))}>${children}</h3>`,
-      h4: ({ children = "", value }: PortableComponentProps) => `<h4${idAttr(asBlock(value))}>${children}</h4>`,
+      normal: ({ children = "", value }: PortableComponentProps) => `<p${textAlignClassAttr(asBlock(value))}>${children}</p>`,
+      h2: ({ children = "", value }: PortableComponentProps) => `<h2${idAttr(asBlock(value))}${textAlignClassAttr(asBlock(value))}>${children}</h2>`,
+      h3: ({ children = "", value }: PortableComponentProps) => `<h3${idAttr(asBlock(value))}${textAlignClassAttr(asBlock(value))}>${children}</h3>`,
+      h4: ({ children = "", value }: PortableComponentProps) => `<h4${idAttr(asBlock(value))}${textAlignClassAttr(asBlock(value))}>${children}</h4>`,
     },
     list: {
       bullet: ({ children = "" }: PortableComponentProps) => `<ul>${children}</ul>`,
@@ -132,7 +134,7 @@ function portableComponents(context: RenderContext) {
 }
 
 function renderLink(children: string, block: CmsBlock): string {
-  const href = stringValue(block.href).trim();
+  const href = normalizeInternalGuideHref(stringValue(block.href).trim());
   if (!href) return children;
   const externalAttrs = isExternalHref(href) ? ' target="_blank" rel="noopener noreferrer"' : "";
   return `<a href="${escapeHtml(href)}"${externalAttrs}>${children}</a>`;
@@ -170,7 +172,14 @@ function renderRepeatedGrid(block: CmsBlock, context: RenderContext): string {
 }
 
 function idAttr(value: CmsBlock) {
-  return value?._key ? ` id="${escapeHtml(value._key)}"` : "";
+  const textId = slugId(blockText(value));
+  const id = textId || stringValue(value?._key);
+  const blockKey = textId && value?._key ? ` data-block-key="${escapeHtml(value._key)}"` : "";
+  return id ? ` id="${escapeHtml(id)}"${blockKey}` : "";
+}
+
+function textAlignClassAttr(value: CmsBlock) {
+  return value.textAlign === "center" ? ' class="text-align-center"' : "";
 }
 
 function blockArray(value: unknown): CmsBlock[] {
@@ -185,8 +194,36 @@ function stringValue(value: unknown): string {
   return typeof value === "string" ? value : "";
 }
 
+function blockText(value: CmsBlock): string {
+  return blockArray(value.children)
+    .map((child) => stringValue((child as SpanChild).text))
+    .join("")
+    .trim();
+}
+
+function slugId(value: string): string {
+  return value
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase();
+}
+
 function isExternalHref(href: string): boolean {
   return /^https?:\/\//i.test(href);
+}
+
+function normalizeInternalGuideHref(href: string): string {
+  const match = href.match(/^(\/guides\/[^?#]+)\?section=([^&#]+)$/);
+  if (!match) return href;
+  return `${match[1]}#${safeDecodeURIComponent(match[2])}`;
+}
+
+function safeDecodeURIComponent(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
 }
 
 function currentSlug(value: unknown): string {

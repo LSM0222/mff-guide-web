@@ -1,0 +1,1062 @@
+{
+  "generatedAt": "2026-09-10T15:03:46.977Z",
+  "dataset": "production",
+  "guides": 22,
+  "totals": {
+    "total": 92,
+    "byKind": {
+      "guide:slug-section-query": 9,
+      "guide:slug-root": 6,
+      "guide:index": 73,
+      "external": 4
+    },
+    "byProblem": {
+      "ok": 87,
+      "section-deep-link-candidate": 1,
+      "ambiguous-root-link": 4
+    }
+  },
+  "internalGuideLinks": {
+    "total": 88,
+    "byKind": {
+      "guide:slug-section-query": 9,
+      "guide:slug-root": 6,
+      "guide:index": 73
+    },
+    "byProblem": {
+      "ok": 83,
+      "section-deep-link-candidate": 1,
+      "ambiguous-root-link": 4
+    }
+  },
+  "issues": {
+    "missingSlug": [],
+    "missingAnchor": [],
+    "sectionDeepLinkCandidates": [
+      {
+        "sourceSlug": "account",
+        "sourceTitle": "계정 관련",
+        "sourceBlockKey": "03a92155fde1",
+        "sourceText": "파견 조합 추천",
+        "href": "/guides/content-guide",
+        "sourceType": "markDef",
+        "kind": "guide:slug-root",
+        "targetSlug": "content-guide",
+        "problem": "section-deep-link-candidate",
+        "suggestedHref": "/guides/content-guide#파견-조합-추천-퓨린이-기준",
+        "suggestedTitle": "파견 조합 추천 (퓨린이 기준)"
+      }
+    ],
+    "ambiguousRootLinks": [
+      {
+        "sourceSlug": "content-guide",
+        "sourceTitle": "콘텐츠 안내",
+        "sourceBlockKey": "dc139428947a",
+        "sourceText": "C.T.P. 획득 공략으로 이동",
+        "href": "/guides/ctp",
+        "sourceType": "markDef",
+        "kind": "guide:slug-root",
+        "targetSlug": "ctp",
+        "problem": "ambiguous-root-link",
+        "candidates": []
+      },
+      {
+        "sourceSlug": "content-guide",
+        "sourceTitle": "콘텐츠 안내",
+        "sourceBlockKey": "46d8ac253fbc",
+        "sourceText": "프카 세공 공략 바로가기",
+        "href": "/guides/comic-card",
+        "sourceType": "markDef",
+        "kind": "guide:slug-root",
+        "targetSlug": "comic-card",
+        "problem": "ambiguous-root-link",
+        "candidates": []
+      },
+      {
+        "sourceSlug": "specup",
+        "sourceTitle": "퓨린이 스펙업",
+        "sourceBlockKey": "d7b535c4e888",
+        "sourceText": "추관피를 얻을 수 있는 세공 공략으로 이동(클릭)",
+        "href": "/guides/comic-card",
+        "sourceType": "markDef",
+        "kind": "guide:slug-root",
+        "targetSlug": "comic-card",
+        "problem": "ambiguous-root-link",
+        "candidates": []
+      },
+      {
+        "sourceSlug": "x-of-sword",
+        "sourceTitle": "X 오브 소드 인챈트",
+        "sourceBlockKey": "c1536f7ed7d3",
+        "sourceText": "소드작을 왜 해야 하는지 모르시겠다면 공략 필독",
+        "href": "/guides/x-of-sword",
+        "sourceType": "markDef",
+        "kind": "guide:slug-root",
+        "targetSlug": "x-of-sword",
+        "problem": "ambiguous-root-link",
+        "candidates": []
+      }
+    ]
+  },
+  "links": [
+    {
+      "sourceSlug": "account",
+      "sourceTitle": "계정 관련",
+      "sourceBlockKey": "7ab4dcbc2c63",
+      "sourceText": "계정 연동 공략",
+      "href": "/guides/account?section=%EC%9E%8A%EC%A7%80%EB%A7%88%EC%84%B8%EC%9A%94-%EA%B3%84%EC%A0%95-%EC%97%B0%EB%8F%99",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "account",
+      "targetAnchor": "잊지마세요-계정-연동",
+      "targetTitle": "잊지마세요 계정 연동!",
+      "problem": null
+    },
+    {
+      "sourceSlug": "account",
+      "sourceTitle": "계정 관련",
+      "sourceBlockKey": "03a92155fde1",
+      "sourceText": "파견 조합 추천",
+      "href": "/guides/content-guide",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "content-guide",
+      "problem": "section-deep-link-candidate",
+      "suggestedHref": "/guides/content-guide#파견-조합-추천-퓨린이-기준",
+      "suggestedTitle": "파견 조합 추천 (퓨린이 기준)"
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "11c39b869156",
+      "sourceText": "널 클리어 하시면 성장 지원 시스템 해금",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "8fa584600081",
+      "sourceText": "영웅심 특성",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "2635c52d7f07",
+      "sourceText": "해당 공략",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "bff6e5574f5f",
+      "sourceText": "월드보스 협력영웅은 해당 공략을 확인해주세요.",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "3d352f91edbe",
+      "sourceText": "스톰 티어-4 획득 시 에인션트 원은 스톰 조합으로 이동합니다.",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "42a015fc55ea",
+      "sourceText": "월드보스 협력영웅은 해당 공략을 확인해주세요.",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "217c830a8d99",
+      "sourceText": "버퍼 리스트 참고",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "c85591b03c55",
+      "sourceText": "월드보스 협력영웅은 해당 공략을 확인해주세요.",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "legend-world-boss",
+      "sourceTitle": "레전드 월드 보스 공략",
+      "sourceBlockKey": "8968ba3a2e8f",
+      "sourceText": "월드보스 협력영웅은 해당 공략을 확인해주세요.",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "hero-selection",
+      "sourceTitle": "영웅 선택권 · 생체 데이터",
+      "sourceBlockKey": "7deaa602a58d",
+      "sourceText": "퓨파 용어 사전 →",
+      "href": "/guides",
+      "sourceType": "linkCard",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "hero-selection",
+      "sourceTitle": "영웅 선택권 · 생체 데이터",
+      "sourceBlockKey": "ebe18a811de7",
+      "sourceText": "이메일 연동 공략",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "hero-selection",
+      "sourceTitle": "영웅 선택권 · 생체 데이터",
+      "sourceBlockKey": "5777ff5b39d9",
+      "sourceText": "난입작",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "6d7ab86b7424",
+      "sourceText": "콘텐츠별 보상 안내",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "3061af980903",
+      "sourceText": "콘텐츠별 보상 안내",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "f874ac56a307",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "2417b033720c",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "6eac67ace09e",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "2dcc3eb7ee0a",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "42fd2c2891de",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "00c65f7dd0c7",
+      "sourceText": "임무 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "6387b1ac20b5",
+      "sourceText": "티어-4 영웅 성장 지원",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "6387b1ac20b5",
+      "sourceText": "프리미엄 카드 세공 가이드 퀘스트",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "630efd9d3da4",
+      "sourceText": "널 클리어 추천 조합",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "33d5cdcc0886",
+      "sourceText": "다양한 스펙업",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "6a3888c692fc",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "dc139428947a",
+      "sourceText": "C.T.P. 획득 공략으로 이동",
+      "href": "/guides/ctp",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "ctp",
+      "problem": "ambiguous-root-link",
+      "candidates": []
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "4ef465d11e3b",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "ba752b4fb472",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "fe342610744f",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "60fb418fdef2",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "71508bc9131c",
+      "sourceText": "도전 목록으로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "729a2bcfc967",
+      "sourceText": "도전 목록으로 이동",
+      "href": "https://www.notion.so/31530fa6760080a4ad84c2ae84e60fb2?pvs=25#31e30fa6760080029e29ca0ab2e2cd08",
+      "sourceType": "markDef",
+      "kind": "external",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "300eadfaf8e5",
+      "sourceText": "퓨파 용어",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "fe0cdfd66f75",
+      "sourceText": "링크를 따라 이동",
+      "href": "https://docs.google.com/spreadsheets/d/10H4qt-2GSNZF7y6fr4QWLWiGiA4qAOf_VgquggoImPM/edit?usp=sharing",
+      "sourceType": "markDef",
+      "kind": "external",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "35b4c5946b47",
+      "sourceText": "티어-4 선택권",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "46d8ac253fbc",
+      "sourceText": "차원의 틈 알아보기",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "content-guide",
+      "sourceTitle": "콘텐츠 안내",
+      "sourceBlockKey": "46d8ac253fbc",
+      "sourceText": "프카 세공 공략 바로가기",
+      "href": "/guides/comic-card",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "comic-card",
+      "problem": "ambiguous-root-link",
+      "candidates": []
+    },
+    {
+      "sourceSlug": "shadowland",
+      "sourceTitle": "섀도우 랜드",
+      "sourceBlockKey": "edd11ba8c1e7",
+      "sourceText": "몸 비틀기 공략",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "promotion-materials",
+      "sourceTitle": "각종 승급 재료 수급처",
+      "sourceBlockKey": "a29b08f51735",
+      "sourceText": "이메일 연동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "promotion-materials",
+      "sourceTitle": "각종 승급 재료 수급처",
+      "sourceBlockKey": "63d578a01127",
+      "sourceText": "이메일 연동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "5e42ec85c31b",
+      "sourceText": "해당 공략으로 이동(클릭시 이동)",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "d7b535c4e888",
+      "sourceText": "추관피를 얻을 수 있는 세공 공략으로 이동(클릭)",
+      "href": "/guides/comic-card",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "comic-card",
+      "problem": "ambiguous-root-link",
+      "candidates": []
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "5c8ca699bd77",
+      "sourceText": "소드작 하는 방법이 궁금하시다면 클릭",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "ce9d43d74860",
+      "sourceText": "코믹스 카드 (프카)",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "71512461ada7",
+      "sourceText": "X 오브 소드 (소드작)",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "bfe6ef806803",
+      "sourceText": "ISO-8 / 이소 세팅",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "13b49a6293bc",
+      "sourceText": "4번째 장비 옵션 변경",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "363694942e54",
+      "sourceText": "우루+오축/오영",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "3083c68474d3",
+      "sourceText": "특수장비",
+      "href": "/guides/inventory?section=%ED%8A%B9%EC%88%98%EC%9E%A5%EB%B9%84",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "inventory",
+      "targetAnchor": "특수장비",
+      "targetTitle": "특수장비",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "248fc1fd9568",
+      "sourceText": "분노 최고 효율 공략",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "b97a1e5c64a9",
+      "sourceText": "(분노의 C.T.P. 사용시 확인)",
+      "href": "/guides/ctp",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "ctp",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "389821bae5ea",
+      "sourceText": "(링크)",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "e45f7d859e49",
+      "sourceText": "(링크)",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "66a753a60bea",
+      "sourceText": "해당 링크 공략 필수로 확인하고 올 것",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "811683c4b731",
+      "sourceText": "엘리트 장비 공략",
+      "href": "/guides/specup?section=%EC%97%98%EB%A6%AC%ED%8A%B8-%EC%9E%A5%EB%B9%84-%EA%B3%B5%EB%9E%B5",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "specup",
+      "targetAnchor": "엘리트-장비-공략",
+      "targetTitle": "엘리트 장비 공략",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "e93420d938d6",
+      "sourceText": "유니폼 공략",
+      "href": "/guides/specup?section=%EC%9C%A0%EB%8B%88%ED%8F%BC-%EA%B3%B5%EB%9E%B5",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "specup",
+      "targetAnchor": "유니폼-공략",
+      "targetTitle": "유니폼 공략",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "39dededc5a39",
+      "sourceText": "시즈널 유니폼",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "16738f9ae68e",
+      "sourceText": "유니폼 티켓 공략",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "359cef279f57",
+      "sourceText": "https://thanosvibs.money/tierlist ↗",
+      "href": "https://thanosvibs.money/tierlist",
+      "sourceType": "markDef",
+      "kind": "external",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "d2b1703442d5",
+      "sourceText": "팀업 컬렉션 공략",
+      "href": "/guides/specup?section=%ED%8C%80%EC%97%85-%EC%BB%AC%EB%A0%89%EC%85%98-%EA%B3%B5%EB%9E%B5",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "specup",
+      "targetAnchor": "팀업-컬렉션-공략",
+      "targetTitle": "팀업 컬렉션 공략",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "500bb8ce3e47",
+      "sourceText": "목록으로",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "f7a9a8763c97",
+      "sourceText": "목록으로",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "specup",
+      "sourceTitle": "퓨린이 스펙업",
+      "sourceBlockKey": "dbe572963405",
+      "sourceText": "엠블럼 안내",
+      "href": "/guides/specup?section=%EC%97%A0%EB%B8%94%EB%9F%BC-%EC%95%88%EB%82%B4",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "specup",
+      "targetAnchor": "엠블럼-안내",
+      "targetTitle": "엠블럼 안내",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "ded45bc73efa",
+      "sourceText": "퓨린이 카드 공략",
+      "href": "/guides/comic-card?section=%ED%93%A8%EB%A6%B0%EC%9D%B4-%EC%B9%B4%EB%93%9C-%EA%B3%B5%EB%9E%B5",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "comic-card",
+      "targetAnchor": "퓨린이-카드-공략",
+      "targetTitle": "퓨린이 카드 공략",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "6b152a54466b",
+      "sourceText": "프리미엄 코믹스 카드",
+      "href": "/guides/comic-card?section=%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%BD%94%EB%AF%B9%EC%8A%A4-%EC%B9%B4%EB%93%9C",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "comic-card",
+      "targetAnchor": "프리미엄-코믹스-카드",
+      "targetTitle": "프리미엄 코믹스 카드",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "d24b9c0fb554",
+      "sourceText": "이후 널 1클 후 나오는 프리미엄 코믹스 카드 세공 퀘스트로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "e132488e4ea3",
+      "sourceText": "세공이 뭔데요? 는 여기를 누르세요",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "f19b2cd8695f",
+      "sourceText": "만렙 연합에 가입",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "1eb11169102a",
+      "sourceText": "레전더리 배틀 : 인피니티 워 익스트림",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "comic-card",
+      "sourceTitle": "코믹스 카드",
+      "sourceBlockKey": "56116fc38c97",
+      "sourceText": "차원의 틈 공략 바로가기",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "c1536f7ed7d3",
+      "sourceText": "소드작을 왜 해야 하는지 모르시겠다면 공략 필독",
+      "href": "/guides/x-of-sword",
+      "sourceType": "markDef",
+      "kind": "guide:slug-root",
+      "targetSlug": "x-of-sword",
+      "problem": "ambiguous-root-link",
+      "candidates": []
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "746d557f1bcf",
+      "sourceText": "X 오브 소드 목차로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "b568f8d11255",
+      "sourceText": "X 오브 소드 목차로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "92e698150fc6",
+      "sourceText": "X 오브 소드 목차로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "73b4a0e5b624",
+      "sourceText": "X 오브 소드 목차로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "x-of-sword",
+      "sourceTitle": "X 오브 소드 인챈트",
+      "sourceBlockKey": "3450e9e98c3c",
+      "sourceText": "X 오브 소드 목차로 이동",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "82b26b4687c7",
+      "sourceText": "되갚 180~200%",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "82b26b4687c7",
+      "sourceText": "짭분 치명타 0.9~1%",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "59c945c74a1e",
+      "sourceText": "카드",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "59c945c74a1e",
+      "sourceText": "이소",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "59c945c74a1e",
+      "sourceText": "4번 장비",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "59c945c74a1e",
+      "sourceText": "우루/오축/오영",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "59c945c74a1e",
+      "sourceText": "유니폼 하위작",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "0bc0be9ff5d6",
+      "sourceText": "효과관통",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "90fcd71b8fed",
+      "sourceText": "불굴/짭불굴",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "ctp",
+      "sourceTitle": "특수 장비 · C.T.P.",
+      "sourceBlockKey": "a8ca8e804c38",
+      "sourceText": "용어사전",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "status-cleanse",
+      "sourceTitle": "상태이상제거 버프",
+      "sourceBlockKey": "942f254f8340",
+      "sourceText": "공략 목차로 가기",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    },
+    {
+      "sourceSlug": "alliance-battle",
+      "sourceTitle": "얼라이언스 배틀 · 극레얼",
+      "sourceBlockKey": "34502e1cb2e1",
+      "sourceText": "극레얼 영상 (made by MSY입니다)",
+      "href": "/guides/alliance-battle?section=%EA%B7%B9%EB%A0%88%EC%96%BC-%EC%98%81%EC%83%81-made-by-msy%EC%9E%85%EB%8B%88%EB%8B%A4",
+      "sourceType": "markDef",
+      "kind": "guide:slug-section-query",
+      "targetSlug": "alliance-battle",
+      "targetAnchor": "극레얼-영상-made-by-msy입니다",
+      "targetTitle": "극레얼 영상 (made by MSY입니다)",
+      "problem": null
+    },
+    {
+      "sourceSlug": "alliance-battle",
+      "sourceTitle": "얼라이언스 배틀 · 극레얼",
+      "sourceBlockKey": "25f96d1a26a1",
+      "sourceText": "https://mff-guide.vercel.app/ ↗",
+      "href": "https://mff-guide.vercel.app/",
+      "sourceType": "markDef",
+      "kind": "external",
+      "problem": null
+    },
+    {
+      "sourceSlug": "events",
+      "sourceTitle": "이벤트",
+      "sourceBlockKey": "dd3110b490f7",
+      "sourceText": "급하신 분들을 위한 3줄 요약 바로가기⏭",
+      "href": "/guides",
+      "sourceType": "markDef",
+      "kind": "guide:index",
+      "problem": null
+    }
+  ]
+}

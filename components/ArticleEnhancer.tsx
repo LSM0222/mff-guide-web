@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { needsNoReferrerPolicy } from "@/lib/imageReferrerPolicy";
 
@@ -73,12 +74,38 @@ function scrollToQuery(query: string) {
 }
 
 function scrollToSection(section: string) {
-  if (!section) return;
+  if (!section) return false;
   const element = document.getElementById(section);
-  element?.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!element) return false;
+
+  let openedDetail = false;
+  let detail = element.closest("details");
+  while (detail) {
+    if (!detail.open) openedDetail = true;
+    detail.open = true;
+    detail = detail.parentElement?.closest("details") ?? null;
+  }
+
+  const scroll = (behavior: ScrollBehavior = "smooth") => element.scrollIntoView({ behavior, block: "start" });
+  window.requestAnimationFrame(() => scroll());
+  if (openedDetail) {
+    [250, 750, 1500, 2500].forEach((delay) => window.setTimeout(() => scroll("auto"), delay));
+  }
+  return true;
+}
+
+function sectionFromHash() {
+  const hash = window.location.hash.replace(/^#/, "");
+  if (!hash) return "";
+  try {
+    return decodeURIComponent(hash);
+  } catch {
+    return hash;
+  }
 }
 
 export function ArticleEnhancer({ query, section }: { query: string; section: string }) {
+  const pathname = usePathname();
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
   const [footnote, setFootnote] = useState<FootnoteState | null>(null);
   const popoverRef = useRef<HTMLDivElement | null>(null);
@@ -98,8 +125,9 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
 
     const onClick = (event: MouseEvent) => {
       const target = event.target;
-      if (target instanceof HTMLElement) {
-        const marker = target.closest<HTMLButtonElement>("button.footnote-marker");
+      const targetElement = target instanceof HTMLElement ? target : target instanceof Node ? target.parentElement : null;
+      if (targetElement) {
+        const marker = targetElement.closest<HTMLButtonElement>("button.footnote-marker");
         if (marker) {
           event.preventDefault();
           event.stopPropagation();
@@ -109,6 +137,21 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
             return footnoteFromMarker(marker);
           });
           return;
+        }
+
+        const link = targetElement.closest<HTMLAnchorElement>("a[href]");
+        if (link) {
+          const url = new URL(link.href, window.location.href);
+          const samePage = url.origin === window.location.origin && url.pathname === window.location.pathname && Boolean(url.hash);
+          if (samePage) {
+            const targetSection = safeDecodeURIComponent(url.hash.slice(1));
+            if (document.getElementById(targetSection)) {
+              event.preventDefault();
+              window.history.pushState(null, "", `${url.pathname}${url.hash}`);
+              window.setTimeout(() => scrollToSection(targetSection), 30);
+              return;
+            }
+          }
         }
       }
 
@@ -173,9 +216,28 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
   }, [footnote]);
 
   useEffect(() => {
-    if (section) window.setTimeout(() => scrollToSection(section), 60);
-    else if (query) window.setTimeout(() => scrollToQuery(query), 90);
-  }, [query, section]);
+    const targetSection = section || sectionFromHash();
+    if (section && !window.location.hash) {
+      window.history.replaceState(null, "", `${pathname}#${encodeURIComponent(section)}`);
+    }
+
+    if (targetSection) {
+      window.setTimeout(() => scrollToSection(targetSection), 90);
+      if (query) window.setTimeout(() => scrollToQuery(query), 170);
+    } else if (query) window.setTimeout(() => scrollToQuery(query), 90);
+
+    const onHashChange = () => {
+      const nextSection = sectionFromHash();
+      if (nextSection) window.setTimeout(() => scrollToSection(nextSection), 30);
+    };
+
+    window.addEventListener("hashchange", onHashChange);
+    window.addEventListener("popstate", onHashChange);
+    return () => {
+      window.removeEventListener("hashchange", onHashChange);
+      window.removeEventListener("popstate", onHashChange);
+    };
+  }, [pathname, query, section]);
 
   const lightboxSrc = lightbox?.src.trim() ?? "";
   const isLightboxOpen = Boolean(lightboxSrc);
@@ -230,6 +292,14 @@ export function ArticleEnhancer({ query, section }: { query: string; section: st
       ) : null}
     </>
   );
+}
+
+function safeDecodeURIComponent(value: string) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
 }
 
 function footnoteFromMarker(marker: HTMLButtonElement): FootnoteState {

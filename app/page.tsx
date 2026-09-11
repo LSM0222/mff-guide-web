@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { AppShell } from "@/components/AppShell";
 import { HomeGuideCard } from "@/components/GuideCards";
+import { HorizontalGuideRow } from "@/components/HorizontalGuideRow";
 import { SearchForm } from "@/components/SearchForm";
-import { getSiteSettings, homeSections } from "@/sanity/lib/content";
+import { homeSectionsFromTaxonomy } from "@/content/guide-taxonomy";
+import { getGuides, getSiteSettings } from "@/sanity/lib/content";
 import { createRouteMetadata } from "./seo";
 
 export const metadata = createRouteMetadata("/");
 
 export default async function Home() {
-  const settings = await getSiteSettings();
+  const [settings, guides] = await Promise.all([getSiteSettings(), getGuides()]);
+  const homeSections = homeSectionsFromTaxonomy(guides);
 
   return (
     <AppShell>
@@ -29,23 +32,6 @@ export default async function Home() {
                   </a>
                 ))}
               </div>
-              <div className="chips">
-                <Link className="chip active" href="/guides">
-                  전체
-                </Link>
-                <Link className="chip" href="/guides?category=beginner">
-                  뉴비 시작
-                </Link>
-                <Link className="chip" href="/guides?category=growth">
-                  성장 · 세팅
-                </Link>
-                <Link className="chip" href="/guides?category=content">
-                  콘텐츠
-                </Link>
-                <Link className="chip" href="/guides?category=tips">
-                  정보 · 팁
-                </Link>
-              </div>
             </section>
             {homeSections.map((section) => (
               <section className="home-section" key={section.category}>
@@ -55,20 +41,20 @@ export default async function Home() {
                     ›
                   </Link>
                 </div>
-                <div className="card-grid">
+                <HorizontalGuideRow ariaLabel={`${section.title} 공략`}>
                   {section.cards.map((card) => (
                     <HomeGuideCard card={card} key={card.title} />
                   ))}
-                </div>
+                </HorizontalGuideRow>
               </section>
             ))}
-            <Link className="glossary-banner" href="/glossary">
-              <div>
-                <strong>퓨파 용어 사전</strong>
-                <p>차틈, 버스, 태생캐, 주자 같은 용어를 빠르게 확인해보세요.</p>
+            <section className="ad-placeholder ad-placeholder-horizontal home-bottom-ad" aria-label="광고 영역">
+              <span className="ad-label">광고</span>
+              <div className="ad-placeholder-body">
+                <strong>광고 영역</strong>
+                <span>콘텐츠 하단 가로형 슬롯</span>
               </div>
-              <span className="go">바로가기 →</span>
-            </Link>
+            </section>
           </main>
           <aside className="right-rail">
             <section className="rail-card">
@@ -83,20 +69,11 @@ export default async function Home() {
                 </Link>
               ))}
             </section>
-            <section className="rail-card">
-              <div className="rail-title">인기 공략 TOP 5</div>
-              {settings.popularGuides.map((guide, index) => (
-                <Link className="popular-row" href={`/guides/${guide.slug}`} key={guide.slug}>
-                  <span className="popular-num">{index + 1}</span>
-                  <span>{guide.title}</span>
-                </Link>
-              ))}
-            </section>
             <section className="rail-card ad-rail-card" aria-label="광고 영역">
-              <div className="ad-label">광고</div>
-              <div className="adsense-placeholder">
-                <strong>AdSense 광고 영역</strong>
-                <span>실제 광고 코드는 배포 단계에서 연결</span>
+              <span className="ad-label">광고</span>
+              <div className="ad-placeholder-body">
+                <strong>광고 영역</strong>
+                <span>사이드바 슬롯</span>
               </div>
             </section>
           </aside>

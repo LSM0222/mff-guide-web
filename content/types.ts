@@ -10,6 +10,12 @@ export type Guide = {
   aliases?: string[];
   searchText?: string;
   text: string;
+  bodySearchTargets?: GuideBodySearchTarget[];
+};
+
+export type GuideBodySearchTarget = {
+  text: string;
+  anchor?: string;
 };
 
 export type GlossaryEntry = {

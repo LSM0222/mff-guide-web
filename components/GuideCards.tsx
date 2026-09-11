@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Guide, HomeCard } from "@/content/types";
-import { categoryLabel } from "@/content/utils";
+import { primaryGuideCategoryLabel } from "@/content/guide-taxonomy";
 
 export function HomeGuideCard({ card }: { card: HomeCard }) {
   return (
@@ -18,7 +18,7 @@ export function GuideListCard({ guide }: { guide: Guide }) {
   return (
     <Link className="list-card" href={`/guides/${guide.slug}`} data-coming={coming ? guide.title : undefined}>
       {coming && <span className="status">준비중</span>}
-      <div className="cat">{categoryLabel(guide.category)}</div>
+      <div className="cat">{primaryGuideCategoryLabel(guide)}</div>
       <h3>{guide.title}</h3>
       <p>{guide.description}</p>
     </Link>

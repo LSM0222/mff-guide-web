@@ -1,14 +1,13 @@
-import { categoryMeta, glossary, guides } from "@/content";
+import { glossary, guides } from "@/content";
+import { guideCategoryDescription, guideCategoryLabel } from "@/content/guide-taxonomy";
 import { normalizeSearch } from "@/content/search-utils";
 
 export function categoryLabel(key?: string) {
-  if (!key) return "공략";
-  return categoryMeta[key]?.label ?? "공략";
+  return guideCategoryLabel(key);
 }
 
 export function categoryDescription(key?: string) {
-  if (!key) return "현재 사이트에서 제공하는 공략을 한 곳에서 확인할 수 있습니다.";
-  return categoryMeta[key]?.desc ?? "현재 사이트에서 제공하는 공략을 한 곳에서 확인할 수 있습니다.";
+  return guideCategoryDescription(key);
 }
 
 function scoreText(text: string, query: string, title: string) {

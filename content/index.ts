@@ -22,7 +22,8 @@ import { allianceBattleGuide } from "./guides/alliance-battle";
 import { eventsGuide } from "./guides/events";
 
 import { glossary } from "./glossary";
-import { categoryMeta, homeSections, links, popular, updates } from "./site";
+import { guideCategoryMeta as categoryMeta } from "./guide-taxonomy";
+import { links, popular, updates } from "./site";
 
 export const guides = [
   accountGuide,
@@ -51,4 +52,4 @@ export const guides = [
 
 export const guideMap = new Map(guides.map((guide) => [guide.slug, guide]));
 
-export { categoryMeta, glossary, homeSections, links, popular, updates };
+export { categoryMeta, glossary, links, popular, updates };

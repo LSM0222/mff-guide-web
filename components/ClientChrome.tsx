@@ -1,29 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, useEffect } from "react";
 
 export function ClientChrome() {
   const pathname = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     document.body.classList.remove("drawer-open");
+    const activeCategory = searchParams.get("category");
     document.querySelectorAll<HTMLElement>(".nav a[data-nav]").forEach((link) => {
       const key = link.dataset.nav;
-      const search = window.location.search;
       const active =
         (key === "home" && pathname === "/") ||
-        (key === "guides" && pathname === "/guides" && !search.includes("category=")) ||
-        (key === "beginner" && search.includes("category=beginner")) ||
-        (key === "growth" && search.includes("category=growth")) ||
-        (key === "content" && search.includes("category=content")) ||
-        (key === "tips" && search.includes("category=tips")) ||
-        (key === "glossary" && pathname === "/glossary");
+        (pathname === "/guides" && activeCategory === key);
       link.classList.toggle("active", active);
     });
-  }, [pathname]);
+  }, [pathname, searchParams]);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
